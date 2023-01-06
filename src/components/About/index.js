@@ -13,6 +13,9 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import { Link, NavLink } from 'react-router-dom'
+import Christopher_Moghabghab_resume from '../../assets/images/Christopher_Moghabghab_resume.pdf'
+
 //mahal chris hot about me
 
 const About = () => {
@@ -66,6 +69,18 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <he> download pdf with react</he>
+        <a
+          className="pdf-link"
+          href={Christopher_Moghabghab_resume}
+          download="Christopher Moghabghab Resume"
+        >
+          <button className="pdf-button" type="submit">
+            DOWNLOAD PDF
+          </button>
+        </a>
       </div>
 
       <Loader type="pacman" />

@@ -74,7 +74,7 @@ const Home = () => {
         <Logo />
       </div>
       <Loader type="pacman" />
-    </>
+    </> 
   )
 }
 

@@ -18,5 +18,6 @@ const Layout = () => {
     </div>
   )
 }
+//this is layout for side
 
 export default Layout

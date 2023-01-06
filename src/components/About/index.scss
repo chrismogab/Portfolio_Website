@@ -1,3 +1,16 @@
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.about-page {
+  .text-zone {
+    position: absolute;
+    top: 250px;
+  }
+}
+
 .stage-cube-cont {
   width: 50%;
   height: 100%;
@@ -78,4 +91,99 @@
   83% {
     transform: rotateX(90deg);
   }
+}
+
+.pdf-button {
+  z-index: 1;
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #ffd700;
+  background: linear-gradient(90deg, #ffd700 #ffd700);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px #ffd700;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+
+  padding: 10px;
+}
+
+.pdf-button::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #022c43;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.pdf-button:hover,
+.pdf-button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.pdf-button:hover::before,
+.pdf-button:focus::before {
+  opacity: 1;
+}
+
+.pdf-button::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #022c43;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.pdf-button:hover::after,
+.pdf-button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.pdf-button {
+  padding-left: 1ch;
+  padding-right: 1ch;
+  color: white;
+  font-size: 1.5ch;
+  position: absolute;
+  top: 500px;
+  left: 300px;
+
+  margin-top: 2ch;
+  margin-right: 2ch;
 }

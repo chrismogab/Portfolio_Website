@@ -16,3 +16,5 @@ npm i react-router-dom
 npm i sass
 
 wsolet naala min : 1:16
+
+npm i jspdf

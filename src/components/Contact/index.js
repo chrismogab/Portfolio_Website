@@ -21,7 +21,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         'service_4dphprm',
-        'template_4of7wp9',
+        'contact_form',
         refForm.current,
         'uY12zTmPrRG_hxHDJ'
       )
@@ -35,6 +35,7 @@ const Contact = () => {
         }
       )
   }
+
   return (
     <>
       <div className="container contact-page">
@@ -84,6 +85,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <button>alerttt</button>
 
       <Loader type="pacman" />
     </>
