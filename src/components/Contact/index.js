@@ -47,7 +47,16 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>I am a freeland blabla bla shu btaaml w kaza aanak ya er yala</p>
+          <p
+            style={{
+              position: 'absolute',
+              marginTop: '310px',
+              marginLeft: '10px',
+              color: '#ffd700',
+            }}
+          >
+            +1 (832) 732 3254
+          </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
@@ -78,14 +87,19 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input
+                    type="submit"
+                    className="flat-button"
+                    value="SEND"
+                    style={{ cursor: 'pointer' }}
+                  />
                 </li>
               </ul>
             </form>
           </div>
         </div>
       </div>
-      <button>alerttt</button>
+      {/* <button style={{ color: 'blue' }}>alerttt</button> */}
 
       <Loader type="pacman" />
     </>

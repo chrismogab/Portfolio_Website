@@ -39,10 +39,12 @@ const About = () => {
           </h1>
           <p> I am a frontend developer who is always eager to learn more</p>
           <p>
-            I have built several websites (mostly marketplace websites). I
-            started off my career as a web developer and then pursued it to
-            become a blockchain developer. My interests in blockcahin and crypto
-            were always inflated.
+            I have a financial engineering background. I was always inflated in
+            learning more about crypto which has lead me to start developing
+            smart contracts, and so my developing career began! I began
+            developing smart contracts and persued my career as a Front-End
+            developer specializing in Javascript, ReactJS, Typescript, Redux,
+            ChakraUI, HTML, and CSS.
           </p>
           <p></p>
         </div>
@@ -78,7 +80,7 @@ const About = () => {
           download="Christopher Moghabghab Resume"
         >
           <button className="pdf-button" type="submit">
-            DOWNLOAD PDF
+            DOWNLOAD CV
           </button>
         </a>
       </div>
